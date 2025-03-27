@@ -6,15 +6,27 @@
     <title>PGS CREW</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-        body { background: black; color: white; font-family: 'Rock Salt', cursive; text-align: center; }
-        .logo { font-size: 3rem; color: #9400D3; text-shadow: 0px 0px 20px #9400D3; }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        body { background: black; color: white; font-family: 'Roboto', sans-serif; text-align: center; }
+        .logo { 
+            font-size: 3rem; 
+            color: #9400D3; 
+            text-shadow: 0px 0px 20px #9400D3;
+            font-family: 'Rock Salt', cursive;
+            animation: rotateText 5s linear infinite;
+        }
+        @keyframes rotateText {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
         .menu { position: absolute; top: 20px; left: 20px; cursor: pointer; }
         .menu div { width: 35px; height: 5px; background: white; margin: 6px 0; }
         .nav { display: none; position: absolute; top: 60px; left: 20px; background: black; padding: 10px; border: 1px solid white; }
         .nav a { display: block; color: white; text-decoration: none; padding: 5px; }
         .admin-img { width: 100%; max-width: 400px; display: block; margin: 20px auto; }
         .contact a { color: white; text-decoration: none; display: block; margin: 10px; }
-        .contact img { width: 30px; vertical-align: middle; }
+        .contact img { width: 30px; vertical-align: middle; margin-right: 10px; }
         .shopify-buy-button { margin: 20px auto; }
     </style>
 </head>
@@ -41,9 +53,9 @@
     </section>
     <section id="contact" class="contact">
         <h2>Kontakt</h2>
-        <a href="https://open.spotify.com/artist/PGSCrew" target="_blank"><img src="spotify.png" alt="Spotify"> Spotify</a>
-        <a href="https://music.apple.com/us/artist/pgs-crew" target="_blank"><img src="apple.png" alt="Apple Music"> Apple Music</a>
-        <a href="https://www.instagram.com/pgs.ent" target="_blank"><img src="instagram.png" alt="Instagram"> Instagram</a>
+        <a href="https://open.spotify.com/artist/4YRH0aDkU8bPGSCrew" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify"> Spotify</a>
+        <a href="https://music.apple.com/us/artist/pgs-crew/123456789" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Apple_Music_icon.svg" alt="Apple Music"> Apple Music</a>
+        <a href="https://www.instagram.com/pgs.ent" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram</a>
         <a href="mailto:pirmgs.rap@gmail.com">📧 pirmgs.rap@gmail.com</a>
         <a href="tel:+421903997805">📞 +421 903 997 805</a>
     </section>
